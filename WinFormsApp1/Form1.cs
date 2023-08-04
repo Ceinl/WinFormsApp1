@@ -11,8 +11,13 @@ namespace WinFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if(a == 299)
+            {
+                a = 301;
+            }
             a++;
             label1.Text = a.ToString();
+            
         }
     }
 }
