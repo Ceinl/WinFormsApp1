@@ -5,19 +5,52 @@ namespace WinFormsApp1
         public Form1()
         {
             InitializeComponent();
+            readCharacter();
         }
 
-        int a;
+        public void readCharacter() // «читка данних персонажа з файлу
+        {
+
+
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(a == 299)
-            {
-                a = 301;
-            }
-            a++;
-            label1.Text = a.ToString();
-            
+
+
+
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_ClassAndLevel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
     }
+
 }
