@@ -28,31 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            SubmitDataButton = new Button();
+            textBox1 = new TextBox();
             SuspendLayout();
             // 
-            // button1
+            // SubmitDataButton
             // 
-            button1.Location = new Point(334, 66);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            SubmitDataButton.Location = new Point(779, 875);
+            SubmitDataButton.Name = "SubmitDataButton";
+            SubmitDataButton.Size = new Size(178, 65);
+            SubmitDataButton.TabIndex = 0;
+            SubmitDataButton.Text = "submit";
+            SubmitDataButton.UseVisualStyleBackColor = true;
+            SubmitDataButton.Click += SubmitDataButton_Click;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(12, 12);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(100, 23);
+            textBox1.TabIndex = 1;
             // 
             // CreateCharacterForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1876, 952);
-            Controls.Add(button1);
+            Controls.Add(textBox1);
+            Controls.Add(SubmitDataButton);
             Name = "CreateCharacterForm";
             Text = "CreateCharacterForm";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private Button button1;
+        private Button SubmitDataButton;
+        private TextBox textBox1;
     }
 }

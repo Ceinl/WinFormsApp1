@@ -20,14 +20,17 @@ namespace WinFormsApp1
         public MainScreen()
         {
             InitializeComponent();
+
+
             
         }
+
+        public static string path = @"data.txt";
 
         public void createCharacter() // Створення файлу персонажа
             {
                 try
                 {
-                    string path = "data.txt";
                     string data = @"start";
 
                     File.WriteAllText(path, data);
@@ -55,7 +58,7 @@ namespace WinFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form1 characterSheet = new Form1();
+            CharacterSheet characterSheet = new CharacterSheet();
             characterSheet.Show();
             this.Hide();
         }

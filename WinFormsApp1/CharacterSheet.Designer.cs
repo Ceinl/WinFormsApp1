@@ -1,6 +1,6 @@
 ﻿namespace WinFormsApp1
 {
-    partial class Form1
+    partial class CharacterSheet
     {
         /// <summary>
         ///  Required designer variable.
@@ -54,7 +54,6 @@
             lbl_CharacterName.TabIndex = 0;
             lbl_CharacterName.Text = "-";
             lbl_CharacterName.TextAlign = ContentAlignment.MiddleCenter;
-            lbl_CharacterName.Click += label1_Click;
             // 
             // label2
             // 
@@ -64,7 +63,6 @@
             label2.Size = new Size(91, 15);
             label2.TabIndex = 1;
             label2.Text = "Character name";
-            label2.Click += label2_Click;
             // 
             // lbl_ClassAndLevel
             // 
@@ -132,7 +130,6 @@
             lbl_ExpiriencePoints.TabIndex = 4;
             lbl_ExpiriencePoints.Text = "-";
             lbl_ExpiriencePoints.TextAlign = ContentAlignment.MiddleCenter;
-            lbl_ExpiriencePoints.Click += label8_Click;
             // 
             // label9
             // 
@@ -151,7 +148,6 @@
             label10.Size = new Size(71, 15);
             label10.TabIndex = 6;
             label10.Text = "Background";
-            label10.Click += label10_Click;
             // 
             // label11
             // 
@@ -161,7 +157,6 @@
             label11.Size = new Size(72, 15);
             label11.TabIndex = 6;
             label11.Text = "Player name";
-            label11.Click += label10_Click;
             // 
             // label12
             // 
@@ -171,7 +166,6 @@
             label12.Size = new Size(32, 15);
             label12.TabIndex = 6;
             label12.Text = "Race";
-            label12.Click += label10_Click;
             // 
             // label13
             // 
