@@ -31,7 +31,7 @@ namespace WinFormsApp1
             {
                 try
                 {
-                    string data = @"start";
+                    string data = @"--CharacterSheetData--";
 
                     File.WriteAllText(path, data);
                 }

@@ -25,7 +25,7 @@ namespace WinFormsApp1
             {
                 using (StreamWriter writer = new StreamWriter(MainScreen.path, true))
                 {
-                    writer.WriteLine($"\n  {inputData.Name} {inputData.Text}");
+                    writer.WriteLine($"\n{inputData.Name} {inputData.Text}");
                 }
             }
             catch (Exception ex)
@@ -50,15 +50,11 @@ namespace WinFormsApp1
 
         private void SubmitDataButton_Click(object sender, EventArgs e)
         {
-            SendCharData(textBox1);
-            Environment.Exit(0);
+            SendCharData(CharacterName);
+            CharacterSheet characterSheet = new CharacterSheet();
+            characterSheet.Show();
+            this.Hide();
         }
     }
 }
 
-
-// foo(lbl)
-// {
-//  line[n] = lbl.text
-// }
-//

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             SubmitDataButton = new Button();
-            textBox1 = new TextBox();
+            CharacterName = new TextBox();
             SuspendLayout();
             // 
             // SubmitDataButton
@@ -42,19 +42,19 @@
             SubmitDataButton.UseVisualStyleBackColor = true;
             SubmitDataButton.Click += SubmitDataButton_Click;
             // 
-            // textBox1
+            // CharacterName
             // 
-            textBox1.Location = new Point(12, 12);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 1;
+            CharacterName.Location = new Point(12, 12);
+            CharacterName.Name = "CharacterName";
+            CharacterName.Size = new Size(100, 23);
+            CharacterName.TabIndex = 1;
             // 
             // CreateCharacterForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1876, 952);
-            Controls.Add(textBox1);
+            Controls.Add(CharacterName);
             Controls.Add(SubmitDataButton);
             Name = "CreateCharacterForm";
             Text = "CreateCharacterForm";
@@ -65,6 +65,6 @@
         #endregion
 
         private Button SubmitDataButton;
-        private TextBox textBox1;
+        private TextBox CharacterName;
     }
 }
